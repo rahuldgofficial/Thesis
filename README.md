@@ -21,9 +21,13 @@ The project establishes an end-to-end computational pipeline designed to analyze
 
 🗂️ Repository Structure & Notebooks
 The project workflow is divided into modular Jupyter Notebooks:
+
 `NLP_Preprocessing.ipynb`: Data engineering pipeline. Handles URL/digit removal, non-Bangla character filtering, diacritic normalization, and stop-word filtering using `bnltk`.
+
 `labeling.ipynb`: Contains the multi-task `Bangla-BERT` architecture. Includes the custom training loop (AdamW optimizer, linear warmup/decay) used to auto-label $\approx 11,000$ comments based on a manually annotated seed set.
+
 `Sentiment_Intensity_Shift.ipynb` & `sentiment_shift_OverTime.ipynb`: Time-series generation and forecasting. Benchmarks SARIMA, Prophet, LSTM (7-day look-back), and TCN (dilated causal convolutions).
+
 `EmotionDynamics.ipynb`: Advanced statistical analysis. Includes K-means clustering of hourly sentiment, $6 \times 6$ Emotion Transition Probability Matrices (Markov chains), Chi-square testing, and Kaplan-Meier survival curves.
 
 🛠️ Tech Stack & Methodology
@@ -58,7 +62,6 @@ pip install -r requirements.txt # Ensure transformers, tensorflow, and stats lib
   
 4. TCN based threshold sensitivity
   <img width="400" height="250" alt="TCN based threshold sensitivity" src="https://github.com/user-attachments/assets/93be8be3-5197-44cb-8dd7-039f2608629b" />
-  
   
 5. TCN Forecast & Anomaly Detection
   <img width="400" height="250" alt="TCN forecast   anomaly detection" src="https://github.com/user-attachments/assets/b091d4b6-d87c-4a48-a857-057fafedd4dc" />
