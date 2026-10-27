@@ -4,17 +4,20 @@
 ![NLP](https://img.shields.io/badge/NLP-Transformers_%7C_BanglaBERT-blue?style=for-the-badge)
 ![Deep Learning](https://img.shields.io/badge/Deep_Learning-TCN_%7C_LSTM-orange?style=for-the-badge)
 ![Stats](https://img.shields.io/badge/Statistical_Analysis-Survival_Analysis_%7C_Markov-brightgreen?style=for-the-badge)
+
 📌 Project Overview (Bachelor Thesis)
-This repository contains the code and methodology for my Bachelor Thesis: "Time-Series Forecasting and Emotion Transition Analysis of Bangla Social Media Sentiment."
-The project builds an end-to-end computational pipeline to analyze collective emotional dynamics in Bangladesh during the July 2024 protests. It processes over 16,000 raw Bangla Facebook comments, utilizes a fine-tuned Multi-task `Bangla-BERT` for sentiment/emotion/topic classification, and benchmarks deep sequence models (TCN, LSTM) against statistical models (SARIMA, Prophet) for time-series anomaly detection.
+This repository encompasses the technical methodology and implementation for my Bachelor’s thesis, titled "Time-Series Forecasting and Emotion Transition Analysis of Bangla Social Media Sentiment." 
+
+The project establishes an end-to-end computational pipeline designed to analyze collective emotional dynamics in Bangladesh during the July 2024 protests. By processing a corpus of over 16,000 raw Bangla Facebook comments, the research utilizes a fine-tuned, multi-task `Bangla-BERT` model for sentiment, emotion, and topic classification. Furthermore, it benchmarks advanced deep sequence architectures—specifically Temporal Convolutional Networks (TCN) and Long Short-Term Memory (LSTM) networks—against traditional statistical models, such as SARIMA and Prophet, for time-series anomaly detection.
 
 🏆 Key Results & Contributions
-Low-Resource NLP: Fine-tuned `Bangla-BERT` for multi-task classification, achieving 78.2% sentiment accuracy and 74.7% topic accuracy on highly noisy, code-mixed social media text.
-Deep Sequence Forecasting: Demonstrated that Temporal Convolutional Networks (TCN) outperform LSTM, Prophet, and SARIMA in forecasting non-linear sentiment shifts (TCN MAE $= 0.70$).
-Anomaly Detection: Applied residual thresholding to TCN forecasts to successfully flag ground-truth protest milestones with up to 50% precision.
-Behavioral Statistical Modeling:
-Proven topic-emotion correlation ($\chi^2 \approx 7486, p < 0.001$).
-Modeled emotion persistence using Kaplan-Meier Survival Analysis, proving "Anger" had the longest median survival time across continuous discourse ($\approx 5$ hours).
+
+* **Low-Resource NLP:** Fine-tuned `Bangla-BERT` for multi-task classification, achieving 78.2% sentiment and 74.7% topic accuracy on noisy, code-mixed text.
+* **Deep Sequence Forecasting:** TCN architectures outperformed LSTM, Prophet, and SARIMA in non-linear sentiment forecasting (TCN MAE = 0.70).
+* **Anomaly Detection:** Residual thresholding on TCN forecasts successfully flagged ground-truth protest milestones with up to 50% precision.
+* **Behavioral Statistical Modeling:** 
+    * Proven strong topic-emotion correlation ($\chi^2 \approx 7486, p < 0.001$).
+    * Kaplan-Meier analysis confirmed "Anger" had the longest median survival time (~5 hours) in continuous discourse.
 
 🗂️ Repository Structure & Notebooks
 The project workflow is divided into modular Jupyter Notebooks:
@@ -43,8 +46,10 @@ pip install -r requirements.txt # Ensure transformers, tensorflow, and stats lib
 ```
 
 📊 Visual Highlights
+
 1. TCN Sentiment Forecasting vs Actual Baseline
    <img width="400" height="250" alt="daily sentiment intensity_ forecast with 95% CIs" src="https://github.com/user-attachments/assets/9b542b1c-e08a-42b7-9537-dc517031edd0" />
+   
 2. Emotion Transition Probability Matrix
    <img width="400" height="250" alt="emotion transition probabilities" src="https://github.com/user-attachments/assets/87cd21e1-105b-4cb7-8398-3b4714cd8e7a" />
    
@@ -80,7 +85,7 @@ pip install -r requirements.txt # Ensure transformers, tensorflow, and stats lib
   <img width="400" height="250" alt="hourley sentiment heat map" src="https://github.com/user-attachments/assets/fc85638a-c0ac-4dd9-a394-b2e7bf70c9dc" />
   
 13. Sentiment Intensity Actual vs Forecast
-    <img width="400" height="250" alt="sentiment_intensity Actual vs Forecast" src="https://github.com/user-attachments/assets/e6f91fa5-47b8-4d83-ba3a-fe3c0109b9df" />
+  <img width="400" height="250" alt="sentiment_intensity Actual vs Forecast" src="https://github.com/user-attachments/assets/e6f91fa5-47b8-4d83-ba3a-fe3c0109b9df" />
     
 📄 Read Full Manuscript Here
 https://doi.org/10.31235/osf.io/qsvrm_v1
