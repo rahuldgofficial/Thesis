@@ -51,43 +51,46 @@ pip install -r requirements.txt # Ensure transformers, tensorflow, and stats lib
 
 📊 Visual Highlights
 
+
 1. TCN Sentiment Forecasting vs Actual Baseline
+
    <img width="400" height="250" alt="daily sentiment intensity_ forecast with 95% CIs" src="https://github.com/user-attachments/assets/9b542b1c-e08a-42b7-9537-dc517031edd0" />
    
-2. Emotion Transition Probability Matrix
+3. Emotion Transition Probability Matrix
+
    <img width="400" height="250" alt="emotion transition probabilities" src="https://github.com/user-attachments/assets/87cd21e1-105b-4cb7-8398-3b4714cd8e7a" />
    
-3. Emotion State Survival Analysis (Kaplan-Meier)
+5. Emotion State Survival Analysis (Kaplan-Meier)
   <img width="400" height="250" alt="Emotion state survival analysis" src="https://github.com/user-attachments/assets/697d0264-6093-4855-8c6e-5fe56edc442e" />
   
-4. TCN based threshold sensitivity
+6. TCN based threshold sensitivity
   <img width="400" height="250" alt="TCN based threshold sensitivity" src="https://github.com/user-attachments/assets/93be8be3-5197-44cb-8dd7-039f2608629b" />
   
-5. TCN Forecast & Anomaly Detection
+7. TCN Forecast & Anomaly Detection
   <img width="400" height="250" alt="TCN forecast   anomaly detection" src="https://github.com/user-attachments/assets/b091d4b6-d87c-4a48-a857-057fafedd4dc" />
   
-6. Anomaly Detection via LSTM Residuals
+8. Anomaly Detection via LSTM Residuals
   <img width="400" height="250" alt="anomaly detection via LSTM Residuals" src="https://github.com/user-attachments/assets/e10bc115-6d9b-40b1-b457-12ed7a81dc28" />
   
-7. Change Point Detection on Sentiment Intensity
+9. Change Point Detection on Sentiment Intensity
   <img width="400" height="250" alt="change point detection on sentiment intensity" src="https://github.com/user-attachments/assets/3a8ff35e-9d4a-414c-a298-11ef69b12e58" />
   
-8. Topic Emotion Associations
+10. Topic Emotion Associations
   <img width="400" height="250" alt="topic emotion associations" src="https://github.com/user-attachments/assets/b13375a5-5a95-4e15-8327-f9bc897a7148" />
   
-9. Daily Sentiment Clusters
+11. Daily Sentiment Clusters
   <img width="400" height="250" alt="daily sentiment clusters" src="https://github.com/user-attachments/assets/ab6e8e35-da4f-489a-a590-4f85844b9870" />
   
-10. Forecast MAE
+12. Forecast MAE
   <img width="400" height="250" alt="forecast MAE 0 890" src="https://github.com/user-attachments/assets/d26956d0-2ad7-47f9-958a-3fb3a07e6532" />
   
-11. Emotion Dynamics Timeline
+13. Emotion Dynamics Timeline
   <img width="400" height="250" alt="emotion dynamics timeline" src="https://github.com/user-attachments/assets/603016bb-dd53-445e-8114-c594b85f3b4a" />
   
-12. Hourley Sentiment Heat map
+14. Hourley Sentiment Heat map
   <img width="400" height="250" alt="hourley sentiment heat map" src="https://github.com/user-attachments/assets/fc85638a-c0ac-4dd9-a394-b2e7bf70c9dc" />
   
-13. Sentiment Intensity Actual vs Forecast
+15. Sentiment Intensity Actual vs Forecast
   <img width="400" height="250" alt="sentiment_intensity Actual vs Forecast" src="https://github.com/user-attachments/assets/e6f91fa5-47b8-4d83-ba3a-fe3c0109b9df" />
     
 📄 Read Full Manuscript Here
